@@ -151,9 +151,10 @@ section {
   background-color: rgba(46, 47, 66, 1);
   padding: 188px 0;
   background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url('../images/hero-image.jpg');
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero-image.jpg');
   background-size: cover;
 }
 
@@ -165,8 +166,8 @@ section {
 .order-service-button {
   display: block;
   border-radius: 4px;
-  border:none;
-  background: var(--iris, #4D5AE5);
+  border: none;
+  background: var(--iris, #4d5ae5);
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -211,23 +212,22 @@ section {
 }
 
 .second-section-list-li {
-  width: calc((100% - 72px)/4);
+  width: calc((100% - 72px) / 4);
 }
 
 .second-section-icon-container {
   border-radius: 4px;
-  border: 1px solid var(--lightslate, #8E8F99);
-  background: var(--cloud, #F4F4FD);
+  border: 1px solid var(--lightslate, #8e8f99);
+  background: var(--cloud, #f4f4fd);
   position: relative;
   height: 112px;
 }
-
 
 .second-section-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Third section */
@@ -284,10 +284,10 @@ section {
 }
 
 .social-link-icon {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Fourth section */
@@ -305,6 +305,18 @@ section {
 
 .fourth-section-list-li {
   width: calc((100% - 48px) / 3);
+  cursor: pointer;
+  
+}
+
+.fourth-section-list-li:hover .fourth-section-title-container {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.fourth-section-list-li:hover .overlay-text {
+  transform: translateY(0);
 }
 
 .fourth-section-title-container {
@@ -313,11 +325,30 @@ section {
   padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
   border-top: none;
+  transition: box-shadow 0.25s;
 }
 
 .fourth-section-list-title {
   text-align: start;
   margin-bottom: 8px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px 32px;
+  background: var(--iris, #4D5AE5);
+  color: var(--cloud, #F4F4FD);
+  transform: translateY(100%);
+  transition: transform 0.5s;
 }
 
 /* Footer section */
