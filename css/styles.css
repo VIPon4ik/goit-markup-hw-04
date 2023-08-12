@@ -214,6 +214,22 @@ section {
   width: calc((100% - 72px)/4);
 }
 
+.second-section-icon-container {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8E8F99);
+  background: var(--cloud, #F4F4FD);
+  position: relative;
+  height: 112px;
+}
+
+
+.second-section-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* Third section */
 
 .third-section {
