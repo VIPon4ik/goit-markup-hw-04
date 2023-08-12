@@ -281,6 +281,11 @@ section {
   border-radius: 50%;
   background-color: #4d5ae5;
   position: relative;
+  transition: background-color 0.4s;
+}
+
+.social-link:hover {
+  background-color: var(--ocean, #404BBF);
 }
 
 .social-link-icon {
@@ -357,6 +362,12 @@ section {
   background-color: rgba(46, 47, 66, 1);
   padding: 100px 0;
 }
+
+.footer-logo-container {
+  display: inline-block;
+  margin-right: 120px;
+}
+
 .footer-text {
   color: rgba(244, 244, 253, 1);
   width: 264px;
@@ -369,4 +380,17 @@ section {
 .footer-logo {
   margin-bottom: 16px;
   display: inline-block;
+}
+
+.footer-social-container {
+  height: 100%;
+}
+
+.footer-social-media {
+  color: var(--white, #FFF);
+  margin-bottom: 16px;
+}
+
+.footer-container {
+  display: flex;
 }
