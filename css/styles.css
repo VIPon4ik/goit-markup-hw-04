@@ -150,6 +150,11 @@ section {
 .first-section {
   background-color: rgba(46, 47, 66, 1);
   padding: 188px 0;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ), url('../images/hero-image.jpg');
+  background-size: cover;
 }
 
 .first-section-title {
