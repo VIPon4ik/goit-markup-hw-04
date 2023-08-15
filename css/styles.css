@@ -131,7 +131,7 @@ section {
   bottom: -1px;
   left: 0;
   height: 4px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 2px;
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,7 +166,6 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 /* Main */
 /* First section */
 
@@ -181,7 +180,6 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1440px;
 }
 
 .first-section-title {
@@ -316,39 +314,67 @@ section {
 }
 
 .social-link-icon {
-  fill:#f4f4fd;
+  fill: #f4f4fd;
 }
 
-/* Fourth section */
+/* portfolio section */
 
-.fourth-section-title {
+.portfolio-button-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 72px;
 }
 
-.fourth-section-list {
+.portfolio-button {
+  color: var(--iris, #4d5ae5);
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+
+  border-radius: 4px;
+  border: 1px solid var(--cornflower, #E7E9FC);
+  background: var(--cloud, #F4F4FD);
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--iris, #4d5ae5);
+  color: var(--white, #FFF);
+}
+
+.portfolio-section-list {
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
 }
 
-.fourth-section-list-li {
+.portfolio-section-list-li {
   width: calc((100% - 48px) / 3);
   cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fourth-section-list-li:hover {
+.portfolio-section-list-li:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.fourth-section-list-li:hover .overlay-text {
+.portfolio-section-list-li:hover .overlay-text {
   transform: translateY(0%);
 }
 
-.fourth-section-title-container {
+.portfolio-section-title-container {
   display: flex;
   flex-direction: column;
   padding: 32px 16px;
@@ -357,7 +383,7 @@ section {
   transition: box-shadow 0.25s;
 }
 
-.fourth-section-list-title {
+.portfolio-section-list-title {
   text-align: start;
   margin-bottom: 8px;
 }
