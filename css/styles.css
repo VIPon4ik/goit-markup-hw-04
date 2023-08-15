@@ -407,8 +407,10 @@ section {
 .footer-social-media {
   color: var(--white, #fff);
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
