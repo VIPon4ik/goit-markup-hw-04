@@ -305,18 +305,18 @@ section {
   background-color: #4d5ae5;
   position: relative;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-link-a:hover {
+.social-link-a:hover,
+.social-link-a:focus {
   background-color: var(--ocean, #404bbf);
 }
 
 .social-link-icon {
   fill:#f4f4fd;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* Fourth section */
