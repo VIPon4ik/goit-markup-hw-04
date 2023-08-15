@@ -175,6 +175,8 @@ section {
     ),
     url('../images/hero-image.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .first-section-title {
@@ -198,6 +200,7 @@ section {
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-button:hover,
