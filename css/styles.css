@@ -521,11 +521,15 @@ section {
 .backdrop-container {
   height: 100vh;
   width: 100vw;
-  position: fixed;
+
   background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .backdrop {
@@ -560,4 +564,10 @@ section {
   fill: #ffffff;
   background-color: var(--ocean, #404BBF);
   border:none;
+}
+
+.is-hidden {
+  visibility: none;
+  pointer-events: none;
+  opacity: 0;
 }
