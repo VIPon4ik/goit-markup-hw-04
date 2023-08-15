@@ -59,7 +59,7 @@
           <h1 class="first-section-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="order-service-button">
+          <button type="button" class="order-service-button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -319,43 +319,43 @@
           <h2>Customers</h2>
           <ul class="fifth-section-list">
             <li class="svg-container">
-              <a href="">
-                <svg class="client-svg">
-                  <use href="./images/icons.svg#icon-Client1" width="168"></use>
+              <a href="" class="fifth-section-link">
+                <svg class="client-svg" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Client1"></use>
                 </svg>
               </a>
             </li>
             <li class="svg-container">
-              <a href="">
-                <svg class="client-svg" width="168">
+              <a href="" class="fifth-section-link">
+                <svg class="client-svg" width="104" height="56">
                   <use href="./images/icons.svg#icon-Client2"></use>
                 </svg>
               </a>
             </li>
             <li class="svg-container">
-              <a href="">
-                <svg class="client-svg" width="168">
+              <a href="" class="fifth-section-link">
+                <svg class="client-svg" width="104" height="56">
                   <use href="./images/icons.svg#icon-Client3"></use>
                 </svg>
               </a>
             </li>
             <li class="svg-container">
-              <a href="">
-                <svg class="client-svg" width="168">
+              <a href="" class="fifth-section-link">
+                <svg class="client-svg" width="104" height="56">
                   <use href="./images/icons.svg#icon-Client4"></use>
                 </svg>
               </a>
             </li>
             <li class="svg-container">
-              <a href="">
-                <svg class="client-svg" width="168">
+              <a href="" class="fifth-section-link">
+                <svg class="client-svg" width="104" height="56">
                   <use href="./images/icons.svg#icon-Client5"></use>
                 </svg>
               </a>
             </li>
             <li class="svg-container">
-              <a href="">
-                <svg class="client-svg" width="168">
+              <a href="" class="fifth-section-link">
+                <svg class="client-svg" width="104" height="56">
                   <use href="./images/icons.svg#icon-Client6"></use>
                 </svg>
               </a>
@@ -378,31 +378,31 @@
         </div>
         <div class="footer-social-container">
           <p class="footer-social-media">Social media</p>
-          <ul class="social-links-container">
+          <ul class="social-links-container footer-links-list">
             <li class="social-link">
-              <a href="" class="social-link-a">
-                <svg class="social-link-icon" height="16" width="16">
+              <a href="" class="social-link-a footer-link">
+                <svg class="social-link-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link">
-              <a href="" class="social-link-a"> 
-                <svg class="social-link-icon" height="16" width="16">
+              <a href="" class="social-link-a footer-link"> 
+                <svg class="social-link-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link">
-              <a href="" class="social-link-a">
-                <svg class="social-link-icon" height="16" width="16">
+              <a href="" class="social-link-a footer-link">
+                <svg class="social-link-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link">
-              <a href="" class="social-link-a">
-                <svg class="social-link-icon" height="16" width="16">
+              <a href="" class="social-link-a footer-link">
+                <svg class="social-link-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -411,6 +411,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop-container is-hidden" data-modal>
+      <div class="backdrop">
+        <button data-modal-close class="backdrop-button" type="button">
+          <svg class="backdrop-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script src="modal.js"></script>
   </body>
