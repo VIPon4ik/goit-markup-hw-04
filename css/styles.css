@@ -426,7 +426,7 @@ section {
   cursor: pointer;
 }
 
-.portfolio-section-list-li:hover .overlay-text {
+.image-container:hover .overlay-text {
   transform: translateY(0%);
 }
 
@@ -448,8 +448,7 @@ section {
   position: relative;
   overflow: hidden;
   display: block;
-  color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
