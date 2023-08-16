@@ -444,6 +444,10 @@ section {
   margin-bottom: 8px;
 }
 
+.portfolio-section-list-text {
+  color: var(--slate, #434455);
+}
+
 .image-container {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
